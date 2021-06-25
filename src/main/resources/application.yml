@@ -1,0 +1,15 @@
+server:
+    port: 8090
+spring:
+    application:
+        name: cathay
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: 124411082
+        url: jdbc:postgresql://localhost:5432/cathay
+        username: postgres
+        hikari:
+            maximum-pool-size: 2
+            max-lifetime: 600000
+    jackson:
+        default-property-inclusion: non-null
